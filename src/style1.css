@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "montserrat" sans-serif;
+}
+body {
+  background: linear-gradient(135deg,#ffb347,#ffcc33,#ff9966);
+  padding: 0 16px;
+  min-height: 100vh;
+  
+}
+
+.header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.header h1 {
+  color: #fff;
+  font-family: "Mclaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  
+}
+.footer p {
+  color: #080808;
+  text-decoration: underline;
+}
+/* .note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+} */
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 20px;
+  margin: 16px;
+  width: 250px;
+ display:block;
+ float:left;
+ overflow: hidden;
+ word-wrap: break-word;
+}
+ 
+form{
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138,137,137);
+}
+form input,
+form textarea{
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form button{
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.note button{
+  border: none;
+  padding: 8px 14px;
+  margin: 5px 5px 0 0;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #f5ba13;
+}
+.note button:nth-of-type(1){
+  background-color: red;
+}
+.note button:nth-of-type(1):hover{
+  background-color: #c1121f;
+}
+.note button:nth-of-type(2){
+  background-color: blue;
+}
+.note button:nth-of-type(2):hover{
+  background-color: #1d3557;
+}
+.note button:nth-of-type(1):contains("Save"),
+.note button:nth-of-type(2):contains("Cancel"){
+  background-color: green;
+}
+.note button:nth-of-type(1):contains("Save"):hover{
+  background-color: darkgreen;
+}
+
+@media (max-width:600px){
+  .note{
+    width:100%;
+  }
+  form{
+    width: 95%;
+  }
+  .note button{
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
